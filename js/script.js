@@ -34,4 +34,7 @@ document.getElementById('anulla').addEventListener("click", function(){
   var utente = document.getElementById('utente');
     utente.classList.add('hidden');
     utente.classList.remove('show');
+    document.getElementById('nome__cognome').value='';
+    document.getElementById('km').value='';
+    document.getElementById('eta').value=1;
 });
