@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BigliettoTreno</title>
+  </head>
+  <body>
+     <div class="container">
+         <h1>calcola il prezzo del tuo biglietto</h1>
+         <div class="wrapper bord">
+           <div class="elements">
+           <div class="form-card">
+             <label >Nome e Cognome</label>
+             <input id="nome__cognome" type="text" name="" value="" placeholder="Inserire il nome">
+           </div>
+           <div class="form-card">
+             <label>Km da percorrere</label>
+             <input id="km" type="number" name="" value="0">
+           </div>
+           <div class="form-card">
+             <label>Fascia d'età</label>
+             <select id="eta" class="" name="">
+               <option value="1">Minorenne</option>
+               <option value="2">Maggiorenne</option>
+               <option value="3">Over 65</option>
+             </select>
+           </div>
+         </div>
+         <div class="buttons">
+            <button type="button" id="genera">Genera</button>
+            <button type="button" id="anulla">Anulla</button>
+         </div>
+         </div>
+         <h2>il tuo biglietto</h2>
+         <div id='utente' class="wrapper hidden">
+             <h3>Dettaglio Passeggeri</h3>
+               <div class="passeggero__dati">
+                 <div class="nome__pass">
+                    <label>Nome</label>
+                    <label>Passegero</label>
+                    <label id="nome__cognomeIns"></label>
+                 </div>
+                 <div class="dati__biglietto">
+                    <div class="dati__top">
+                      <label>Offerta</label>
+                      <label>Carozza</label>
+                      <label>Codice CP</label>
+                      <label>Costo Biglieto</label>
+                    </div>
+                    <div class="dati__bottom">
+                      <label id="minor"></label>
+                      <label id="valCarozza"></label>
+                      <label id="codTreno"></label>
+                      <label id="price"></label>
+                    </div>
+                 </div>
+             </div>
+           </div>
+     </div>
+     <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
