@@ -26,8 +26,8 @@ document.getElementById('genera').addEventListener("click", function(){
       prezzo = prezzo - (prezzo*0.4);
     document.getElementById('minor').innerHTML =  'Over 65';
   }
-  var a = Math.round(prezzo * 1000) / 1000;
-  document.getElementById('price').innerHTML =  a + ' '+ '€';
+
+  document.getElementById('price').innerHTML = prezzo.toPrecision(3) +' '+ '€';
 });
 
 document.getElementById('anulla').addEventListener("click", function(){
