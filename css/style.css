@@ -5,8 +5,9 @@
 }
 
 .container {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  overflow: hidden;
   background: #b91450;
 }
 
@@ -59,9 +60,14 @@ h2 {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #b91450;
-
 }
 
+.form-card input:hover,
+.form-card select:hover {
+  background: #b91450;
+  color: white;
+
+}
 .buttons {
   display: flex;
   justify-content: center;
