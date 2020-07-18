@@ -29,8 +29,8 @@
   document.getElementById('price').innerHTML = prezzo.toPrecision(3) +' '+ '€';
 });
 
-var anulla = document.getElementById('anulla')
-anulla.addEventListener("click", function(){
+var annulla = document.getElementById('annulla')
+annulla.addEventListener("click", function(){
   var utente = document.getElementById('utente');
     utente.classList.add('hidden');
     utente.classList.remove('show');
