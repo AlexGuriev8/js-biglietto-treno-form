@@ -88,7 +88,6 @@ h3 {
 }
 
 .passeggero__dati {
-  height: 170px;
   width: 95%;
   border: 1px solid gray;
   border-right: 0;
@@ -99,9 +98,8 @@ h3 {
 .nome__pass {
   width: 20%;
   background-color: gray;
-  height: 170px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
   padding-left: 12px;
   padding-top: 12px;
 }
